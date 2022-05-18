@@ -1,0 +1,57 @@
+/* Color Pattern */
+
+:root {
+    --primary-color: #dcf64b;
+    --second-color: #a0b435;
+    --black-color: #000000;
+    --black-color-medium: #0c0c0c;
+    --semi-black: #1e1e1e;
+    --white-color: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1246px;
+    padding: 0rem 1.5rem;
+    width: 100%;
+}
+
+.container-fluid{
+    padding: 0rem 1.8rem;
+    width: 100%;
+}
+
+h2 {
+    color: var(--white-color);
+    font-family: Inter;
+    font-size: 6.4rem;
+    font-weight: 900;
+    line-height: 7.7rem;
+}
+
+h2 span {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-radius: 2.4rem;
+    color: var(--black-color);
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 1rem 2.6rem;
+}
+
+.btn-primary.empty {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 2.4rem;
+}
+
+.menu-item {
+    color: var(--primary-color);
+    display: inline-block;
+    font-weight: 700;
+    line-height: 2.4rem;
+}

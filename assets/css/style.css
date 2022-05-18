@@ -1,0 +1,43 @@
+/* HEADER */
+
+header {
+    left: 0;
+    padding: 4rem 0rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2022;
+}
+
+header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container nav .menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container nav .menu li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4.8rem;
+}
+
+header .container nav .menu-social {
+    align-items: center;
+    display: flex;
+    gap: 3.4rem;
+    justify-content: space-between;
+    margin-left: 4rem;
+}
