@@ -110,3 +110,65 @@ header .container nav .menu-social {
      margin-top: 4rem;
      padding: 1rem 5.6rem;
  }
+
+ /* Section Success */
+
+ .s-success {
+    margin: 0 auto;
+    padding: 14.4rem 0;
+ }
+
+ .s-success .container {
+     align-items: center;
+     display: flex;
+     gap: 4.4rem;
+}
+
+.s-success .container .cards {
+    display: flex;
+}
+
+.s-success .container .title-success h2 {
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.s-success .container .cards .card {
+    background-color: var(--white-color);
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30.4rem;
+    margin-right: 3.3rem;
+    width: 100%;
+}
+
+/* Ativo */
+
+.s-success .container .cards .card.active {
+    background-color: var(--primary-color);
+}
+
+.s-success .container .cards .card .card-title {
+    margin: 5rem 0;
+    padding-left: 1.4rem;
+    padding-right: 14.5rem;
+}
+
+.s-success .container .cards .card .card-title h3 {
+    font-family: "Inter";
+    font-size: 6.4rem;
+    font-weight: 300;
+    line-height: 7.7rem;
+    margin-bottom: 5.5rem;
+}
+
+.s-success .container .cards .card .card-info {
+   padding-left: 1.4rem; 
+}
+
+.s-success .container .cards .card .card-info p {
+    font-family: "Inter";
+    font-size: 3.2rem;
+    font-weight: 300;
+    line-height: 3.9rem;
+}
