@@ -40,13 +40,25 @@ h2 span {
     font-weight: 700;
     line-height: 2.4rem;
     padding: 1rem 2.6rem;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--white-color);
+    transform: scale(1.04);
 }
 
 .btn-primary.empty {
     background-color: transparent;
     border: 2px solid var(--primary-color);
-    color: var(--primary-color);
     border-radius: 2.4rem;
+    color: var(--primary-color);
+    transition: all 0.2s;
+}
+
+.btn-primary.empty:hover {
+    background-color: var(--primary-color);
+    color: var(--black-color); 
 }
 
 .menu-item {
@@ -54,12 +66,39 @@ h2 span {
     display: inline-block;
     font-weight: 700;
     line-height: 2.4rem;
+    transition: color 0.2s;
+}
+
+.menu-item:hover {
+    color: var(--second-color);
 }
 
 .tag {
    background-color: var(--white-color);
    border-radius: 5rem;
+   display: inline-block;
    font-size: 1.2rem;
    font-weight: 300;
-   padding: 0.6rem 2rem; 
+   padding: 0.6rem 2rem;
+   text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: var(--semi-black);
+    border: 0.1rem solid var(--semi-black);
+    border-radius: 0.4rem;
+    color: var(--white-color);
+    outline: none;
+    padding: 2rem;
+    resize: none;
+    transition: all 0.4s;
+    width: 100%;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    border: 0.1rem solid var(--primary-color);
 }

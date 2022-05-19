@@ -28,9 +28,6 @@ header .container nav .menu {
 }
 
 header .container nav .menu li {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     margin-right: 4.8rem;
 }
 
@@ -40,6 +37,15 @@ header .container nav .menu-social {
     gap: 3.4rem;
     justify-content: space-between;
     margin-left: 4rem;
+}
+
+header .container nav .menu-social li a img {
+    transition: all 0.2s;
+}
+
+header .container nav .menu-social li a img:hover {
+    filter: brightness(0.9);
+    transform: translateY(-8%);
 }
 
 /* Section Hero */
@@ -106,6 +112,14 @@ header .container nav .menu-social {
     margin-top: 2.3rem;
  }
 
+ .s-hero .container .title-box .techs img {
+    transition: all 0.2s;
+}
+
+ .s-hero .container .title-box .techs img:hover {
+     transform: translateY(-10%);
+ }
+
  .s-hero .container .title-box .btn-primary {
      margin-top: 4rem;
      padding: 1rem 5.6rem;
@@ -139,19 +153,25 @@ header .container nav .menu-social {
     cursor: pointer;
     height: 30.4rem;
     margin-right: 3.3rem;
+    transition: all 0.2s;
     width: 100%;
 }
 
-/* Ativo */
-
-.s-success .container .cards .card.active {
-    background-color: var(--primary-color);
+.s-success .container .cards .card:hover {
+    filter: brightness(0.9);
+    transform: scale(1.01);
 }
 
 .s-success .container .cards .card .card-title {
     margin: 5rem 0;
     padding-left: 1.4rem;
     padding-right: 14.5rem;
+}
+
+/* Ativo */
+
+.s-success .container .cards .card.active {
+    background-color: var(--primary-color);
 }
 
 .s-success .container .cards .card .card-title h3 {
@@ -171,4 +191,163 @@ header .container nav .menu-social {
     font-size: 3.2rem;
     font-weight: 300;
     line-height: 3.9rem;
+}
+
+/* About */
+
+.s-about {
+    background-color: var(--black-color-medium);
+    padding: 6rem 0;
+}
+
+.s-about .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-about .container .about-me {
+    max-width: 71rem;
+    width: 100%;
+}
+
+.s-about .container .about-me h2 {
+    font-weight: 900;
+}
+
+.s-about .container .about-me p {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-top: 2.4rem;
+}
+
+.s-about .container .about-me ul {
+    align-items: center;
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 3.2rem;
+}
+
+.s-about .container .about-me ul li{
+    transition: all 0.2s;
+}
+
+.s-about .container .about-me ul li:hover {
+    transform: translateY(-8%);
+}
+
+.s-about .container .about-me ul li img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.s-about .container .about-me .my-picture img {
+    border-radius: 4px;
+}
+
+/* Cases */
+
+.s-cases {
+    padding: 5rem 0rem;
+}
+
+.s-cases .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.s-cases .container .title-cases {
+    margin-bottom: 7.4rem;
+}
+
+.s-cases .container .title-cases h2 {
+    font-weight: 900;
+}
+
+.s-cases .container .cases {
+    display: flex;
+    width: 100%;
+}
+
+.s-cases .container .cases .case img {
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.s-cases .container .cases .case img:hover {
+    transform: translateY(-2%);
+}
+
+.s-cases .container .cases .case:nth-child(2) {
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-top: -1.6rem;
+}
+
+/* Contact */
+
+.s-contact {
+    padding-bottom: 5.1rem;
+    padding-top: 4rem;
+}
+
+.s-contact .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-contact .container .title-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 34.3rem;
+    width: 100%;
+}
+
+.s-contact .container .title-contact .tag {
+    max-width: 13.2rem;
+    width: 100%;
+}
+
+.s-contact .container .title-contact h2 {
+    font-weight: 900;
+}
+
+.s-contact .container .form-contact {
+    max-width: 48.6rem;
+    width: 100%;
+}
+
+.s-contact .container .form-contact .input-group input[type="text"], 
+.s-contact .container .form-contact .input-group input[type="email"] {
+    margin-bottom: 3.1rem;
+}
+
+.input-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.7rem;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black-color-medium);
+}
+
+footer .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container .copy {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    line-height: 2.4rem;
+    padding: 5.2rem 0;
 }
